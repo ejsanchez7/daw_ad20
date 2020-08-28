@@ -7,22 +7,112 @@
 
         <link rel="icon" class="js-site-favicon" href="https://i.pinimg.com/originals/a3/80/8e/a3808ee76efc97a4bbb3b58375a6f2ae.png" />
 
+        <style media="screen">
+
+            img{
+                width: 200px;
+            }
+
+        </style>
+
     </head>
+
     <body>
 
-        <!-- Aquí va el contenido del sitio -->
-        <h1>Hola DAW</h1>
-        <h3>Hola DAW</h3>
-        <h5>Hola DAW</h5>
+        <!--
+            - Título
+            - ISBN
+            - Autor
+            - Edición
+            - Editorial
+            - Estatus (disponible/no disponible)
+            - Copias disponibles
+            - Descripción/Resumen
+            - Categoría
 
-        <hr/>
+            La Bibila
+        -->
 
-        <p>Esto es un <span style="color:red;">párrafo</span>
+        <h1>La Biblia&#169;</h1>
+        <p>
+            <strong>ISBN:</strong>BL-1234567
         </p>
 
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <!-- Imagen del libro -->
+        <img src="./img/biblia.jpg" alt="La Biblia" />
+
+        <!-- Tablas -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Autor</th>
+                    <th>Edición</th>
+                    <th>Editorial</th>
+                    <th>Idioma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Varios</td>
+                    <td>Otro autor</td>
+                    <td>2020</td>
+                    <td>Porrúa</td>
+                    <td>Español</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Encabezado -->
+        <h3>Categorías</h3>
+
+        <!-- Lista desordenada -->
+        <ol>
+            <li>Teología</li>
+            <li>Historia</li>
+            <li>Filosofía</li>
+        </ol>
+
+        <a href="#reviews">Ver Reviews</a>
+
+        <!-- Libros relacionados -->
+        <div>
+
+            <div>
+                <!-- Imagen -->
+                <a href="https://www.amazon.com.mx/El-Cor%C3%A1n-An%C3%B3nimo/dp/6070734432/ref=asc_df_6070734432/?tag=gledskshopmx-20&linkCode=df0&hvadid=315904076849&hvpos=&hvnetw=g&hvrand=13690345732249237604&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010149&hvtargid=pla-580834001709&psc=1" target="_blank">
+                    <img src="./img/coran.jpg" alt="Coran" />
+                </a>
+                <p>Corán</p>
+            </div>
+
+            <div>
+                <!-- Imagen -->
+                <a href="./img/biblia_ninos.jpg">
+                    <img src="./img/biblia_ninos.jpg" alt="Biblia para niños" />
+                </a>
+                <p>Biblia para niños</p>
+            </div>
+
+            <div>
+                <!-- Imagen -->
+                <a href="#">
+                    <img src="./img/fundamentos_teologia.jpg" alt="Fundamentos de teología" />
+                </a>
+                <p>Fundamentos de Teología</p>
+            </div>
+
+        </div>
+
+        <!-- Comentarios y reviews -->
+        <h3 id="reviews">Reviews</h3>
+
+        <div>
+
+            <p>Excelente redacción</p>
+            <p>La traducción no es precisa</p>
+
+        </div>
 
     </body>
+
 </html>
