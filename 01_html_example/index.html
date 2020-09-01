@@ -13,105 +13,160 @@
                 width: 200px;
             }
 
+            nav li{
+                display: inline-block;
+                padding: 10px 15px;
+                background-color: green;
+            }
+
+            nav li a{
+                color: #FFFFFF;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
         </style>
 
     </head>
 
     <body>
 
-        <!--
-            - Título
-            - ISBN
-            - Autor
-            - Edición
-            - Editorial
-            - Estatus (disponible/no disponible)
-            - Copias disponibles
-            - Descripción/Resumen
-            - Categoría
+        <header>
+            <h1>DAW Project Example</h1>
+        </header>
 
-            La Bibila
-        -->
+        <nav>
 
-        <h1>La Biblia&#169;</h1>
-        <p>
-            <strong>ISBN:</strong>BL-1234567
-        </p>
+            <ul>
+                <li><a href="">Catálogo</a></li>
+                <li><a href="">Destacados</a></li>
+                <li><a href="">Mis Préstamos</a></li>
+            </ul>
 
-        <!-- Imagen del libro -->
-        <img src="./img/biblia.jpg" alt="La Biblia" />
+        </nav>
 
-        <!-- Tablas -->
-        <table border="1">
-            <thead>
-                <tr>
-                    <th colspan="2">Autor</th>
-                    <th>Edición</th>
-                    <th>Editorial</th>
-                    <th>Idioma</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Varios</td>
-                    <td>Otro autor</td>
-                    <td>2020</td>
-                    <td>Porrúa</td>
-                    <td>Español</td>
-                </tr>
-            </tbody>
-        </table>
+        <main>
 
-        <!-- Encabezado -->
-        <h3>Categorías</h3>
+            <!--
+                - Título
+                - ISBN
+                - Autor
+                - Edición
+                - Editorial
+                - Estatus (disponible/no disponible)
+                - Copias disponibles
+                - Descripción/Resumen
+                - Categoría
 
-        <!-- Lista desordenada -->
-        <ol>
-            <li>Teología</li>
-            <li>Historia</li>
-            <li>Filosofía</li>
-        </ol>
+                La Bibila
+            -->
 
-        <a href="#reviews">Ver Reviews</a>
+            <section>
 
-        <!-- Libros relacionados -->
-        <div>
+                <article>
 
-            <div>
-                <!-- Imagen -->
-                <a href="https://www.amazon.com.mx/El-Cor%C3%A1n-An%C3%B3nimo/dp/6070734432/ref=asc_df_6070734432/?tag=gledskshopmx-20&linkCode=df0&hvadid=315904076849&hvpos=&hvnetw=g&hvrand=13690345732249237604&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010149&hvtargid=pla-580834001709&psc=1" target="_blank">
-                    <img src="./img/coran.jpg" alt="Coran" />
-                </a>
-                <p>Corán</p>
-            </div>
+                    <header>
+                        <h1>La Biblia</h1>
+                        <h3>ISBN: BL-1234567</h3>
+                    </header>
 
-            <div>
-                <!-- Imagen -->
-                <a href="./img/biblia_ninos.jpg">
-                    <img src="./img/biblia_ninos.jpg" alt="Biblia para niños" />
-                </a>
-                <p>Biblia para niños</p>
-            </div>
+                    <!-- Imagen del libro -->
+                    <img src="./img/biblia.jpg" alt="La Biblia" />
 
-            <div>
-                <!-- Imagen -->
-                <a href="#">
-                    <img src="./img/fundamentos_teologia.jpg" alt="Fundamentos de teología" />
-                </a>
-                <p>Fundamentos de Teología</p>
-            </div>
+                    <!-- Tablas -->
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Autor</th>
+                                <th>Edición</th>
+                                <th>Editorial</th>
+                                <th>Idioma</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Varios</td>
+                                <td>Otro autor</td>
+                                <td>2020</td>
+                                <td>Porrúa</td>
+                                <td>Español</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        </div>
+                    <!-- Título -->
+                    <h3>Categorías</h3>
 
-        <!-- Comentarios y reviews -->
-        <h3 id="reviews">Reviews</h3>
+                    <!-- Lista desordenada -->
+                    <ol>
+                        <li>Teología</li>
+                        <li>Historia</li>
+                        <li>Filosofía</li>
+                    </ol>
 
-        <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                        ornare pretium rutrum. Sed vel eros ipsum. Donec elementum sapien
+                        ac ipsum egestas, ac aliquam risus bibendum. Mauris eu turpis ut
+                        magna tempus fringilla sit amet ut nisi. Sed consectetur nec tellus
+                        eget cursus. Vestibulum at est massa. Morbi ligula felis, semper eu
+                        velit et, fermentum facilisis nisl. Vestibulum vestibulum lorem a
+                        porttitor tempor. Phasellus iaculis, purus a auctor luctus, lectus
+                        metus elementum neque, vel tincidunt augue purus nec dolor. Duis
+                        commodo est vitae tellus euismod auctor. Donec volutpat massa a tempor
+                        posuere. Mauris ornare, felis in viverra fringilla, ipsum orci convallis
+                        est, sed pellentesque dolor neque bibendum felis.
+                    </p>
 
-            <p>Excelente redacción</p>
-            <p>La traducción no es precisa</p>
+                    <!-- Comentarios y reviews -->
+                    <h3 id="reviews">Reviews</h3>
 
-        </div>
+                    <div>
+
+                        <p>Excelente redacción</p>
+                        <p>La traducción no es precisa</p>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Libros relacionados -->
+            <aside>
+
+                <div>
+                    <!-- Imagen -->
+                    <a href="https://www.amazon.com.mx/El-Cor%C3%A1n-An%C3%B3nimo/dp/6070734432/ref=asc_df_6070734432/?tag=gledskshopmx-20&linkCode=df0&hvadid=315904076849&hvpos=&hvnetw=g&hvrand=13690345732249237604&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010149&hvtargid=pla-580834001709&psc=1" target="_blank">
+                        <img src="./img/coran.jpg" alt="Coran" />
+                    </a>
+                    <p>Corán</p>
+                </div>
+
+                <div>
+                    <!-- Imagen -->
+                    <a href="./img/biblia_ninos.jpg">
+                        <img src="./img/biblia_ninos.jpg" alt="Biblia para niños" />
+                    </a>
+                    <p>Biblia para niños</p>
+                </div>
+
+                <div>
+                    <!-- Imagen -->
+                    <a href="#">
+                        <img src="./img/fundamentos_teologia.jpg" alt="Fundamentos de teología" />
+                    </a>
+                    <p>Fundamentos de Teología</p>
+                </div>
+
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>Desarrollado para la clase DAW AD20&copy;</p>
+        </footer>
+
 
     </body>
 
