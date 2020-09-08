@@ -1,0 +1,19 @@
+/*********************************
+        TIPOS DE SELECTORES
+**********************************/
+
+/* tag name */
+body{
+    /* Conjunto de propiedades a modificar */
+    color: brown;
+}
+
+/* Clase */
+.centered{
+
+}
+
+/* id */
+#first-link{
+
+}
