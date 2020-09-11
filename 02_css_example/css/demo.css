@@ -1,0 +1,24 @@
+header{
+    width: 700px;
+    background-color: #CD5C5C;/*Indigo*/;
+}
+
+header h1{
+    background-color: green;
+    /* 80% del elemento que lo contiene */
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* Regla anidada */
+main p{
+    font-weight: bold;
+}
+
+footer p{
+    text-transform: capitalize;
+}
+
+p{
+    color: blue;
+}

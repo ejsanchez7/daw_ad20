@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo - CSS</title>
+
+        <!-- Hoja de estilos externa -->
+        <link rel="stylesheet" href="./css/demo.css" />
+
+        <!-- Método embebido para incluir una CSS -->
+        <style media="screen">
+            header p{
+                color: black;
+            }
+
+            /* Regla compuesta */
+            .encabezado h1,
+            .encabezado h2{
+                color: orange;
+                font-size: 35px;
+            }
+
+            /* Regala simple */
+            .underlined{
+                text-decoration: underline overline;
+                text-decoration-color: blue;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+
+            <section class="encabezado">
+                <h1 style="text-align:center;">Ejemplo CSS</h1>
+                <h2>Encabezado 2</h2>
+                <p>Header content</p>
+            </section>
+
+        </header>
+
+        <nav>
+
+        </nav>
+
+        <main>
+
+            <section class="encabezado underlined">
+                <h1>Main Section</h1>
+            </section>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat imperdiet nisi
+                ac vehicula. Etiam tincidunt quam eu dui condimentum lobortis. Praesent ac gravida
+                purus. Aliquam ultricies erat ut tristique consectetur. Interdum et malesuada fames
+                ac ante ipsum primis in faucibus.
+            </p>
+
+        </main>
+
+        <footer>
+            <!-- Modo inline de incluir estilos con el atributo style -->
+            <h1 style="color:yellow;text-align:center;">Ejemplo CSS</h1>
+            <p>
+                Nullam ut nisl sit amet ex porttitor sollicitudin id sed dolor. Aenean leo justo,
+                posuere non urna vehicula, interdum vestibulum mauris. In congue nisi neque, in facilisis
+                leo fringilla sed.
+            </p>
+        </footer>
+
+    </body>
+</html>
