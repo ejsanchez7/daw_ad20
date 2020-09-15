@@ -1,24 +1,70 @@
+/* Importar tipografía descargada */
+@font-face {
+  font-family: oldLondon;
+  src: url('../fonts/old_london/OldLondon.ttf');
+}
+
+@font-face {
+  font-family: graffiti;
+  src: url('../fonts/a_attack_graffiti/aAttackGraffiti.ttf');
+}
+
+body{
+    font-family: arial,helvetica,sans-serif;
+    color: #000000;
+    font-size: 15px;
+}
+
 header{
     width: 700px;
     background-color: #CD5C5C;/*Indigo*/;
+    margin: 0px auto;
+    border: 5px solid rgb(50,70,100);
 }
 
-header h1{
+header .encabezado h1{
     background-color: green;
     /* 80% del elemento que lo contiene */
     width: 80%;
     margin: 0px auto;
+    /* Utilizar tipografía custom definida con @font-face */
+    font-family: oldLondon;
+    font-size: 50px;
+}
+
+header .encabezado h2{
+    font-family: graffiti;
+    background-color: #0FAD54;
+    padding: 20px;
+    border: 7px double rgb(90,100,150);
+    border-width: 3px 5px 7px 9px;
+    border-color: rgb(90,100,150) rgb(45,125,8);
 }
 
 /* Regla anidada */
 main p{
+    /* Grosor de la tipografía */
     font-weight: bold;
+    border-left: 10px dashed rgb(25,36,48);
+}
+
+main ul{
+    list-style-type: square;
+}
+
+main ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+#customList{
+    list-style-image: url('../img/enano.png');
+    font-size: 25px;
 }
 
 footer p{
+    /* Modificar mayusculas/minusculas */
     text-transform: capitalize;
-}
-
-p{
+    font-family: monospace;
     color: blue;
 }
