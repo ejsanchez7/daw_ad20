@@ -40,6 +40,23 @@ header .encabezado h2{
     border-width: 3px 5px 7px 9px;
     border-color: rgb(90,100,150) rgb(45,125,8);
 }
+/*
+Gradiente usando imagen de 10 px
+main{
+    background-image: url('../img/fadedBar.png');
+    background-repeat: repeat-x;
+    background-color: #8e88c5;
+}
+*/
+
+/* Gradiente usando CSS3 */
+main{
+background-image: -webkit-linear-gradient(top, #1b154d, #8e88c5); /* For Chrome and Safari */
+background-image: -moz-linear-gradient(top, #1b154d, #8e88c5); /* For old Fx (3.6 to 15) */
+background-image: -ms-linear-gradient(top, #1b154d, #8e88c5); /* For pre-releases of IE 10*/
+background-image: -o-linear-gradient(top, #1b154d, #8e88c5); /* For old Opera (11.1 to 12.0) */
+background-image: linear-gradient(to bottom, #1b154d, #8e88c5); /* Standard syntax; must be last */
+}
 
 /* Regla anidada */
 main p{
@@ -55,6 +72,23 @@ main ul{
 main ol{
     list-style-type: upper-roman;
     list-style-position: inside;
+}
+
+/* Imagen de fondo */
+main .bg-image{
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background-image: url('../img/bg_star_wars.png');
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border: 10px solid #FFFFFF;
+}
+
+main .bg-image p{
+    background-color: rgba(255,255,255,0.4);
+    /* text-shadow: 2px 2px #000000; */
 }
 
 #customList{

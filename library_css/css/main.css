@@ -1,0 +1,126 @@
+/*********************************
+        TIPOS DE SELECTORES
+**********************************/
+
+/* tag name */
+body{
+    /* Conjunto de propiedades a modificar */
+    color: #FFFFFF;
+    background-color: #041d37;
+    margin: 0;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0px auto;
+    padding: 25px 35px;
+    box-sizing: border-box;
+}
+
+.mainHeader, footer{
+    background-color: #4a648a;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    background-color: #2b4c6f;
+}
+
+nav.wrapper{
+    background-color: #133253;
+    padding: 0;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav ul li a{
+    color: #738ca6;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li:hover{
+    background-color: #041d37;
+}
+
+main section, main aside{
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+main section{
+    width: 74%;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+main section img{
+    width: 25%;
+}
+
+main section .bookDetail{
+    width: 74%;
+    vertical-align: top;
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+main section table{
+    border-collapse: collapse;
+}
+
+main section table td,
+main section table th{
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #738ca6;
+}
+
+main section table th{
+    background-color: #133253;
+}
+
+main section img,
+main section .bookDetail{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#categories{
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+#categories li{
+    display: inline-block;
+    padding: 10px;
+    background-color: #4a6a8a;
+}
+
+main aside{
+    width: 25%;
+}
+
+main aside .asideItem{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 2px solid #738ca6;
+    margin-bottom: 25px;
+}
+
+main aside img{
+    width: 70%;
+}
