@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Forms example</title>
+    </head>
+
+    <body>
+
+        <h1>Ejemplo de Formularios</h1>
+
+        <form action="./php/process_data.php" method="post" enctype="application/x-www-form-urlencoded">
+
+            <input type="hidden" name="id" value="12345" />
+
+            <label for="user">Usuario: </label>
+            <input type="text" name="username" id="user" value="" />
+            <br><br>
+
+            <label for="pass">Contraseña: </label>
+            <input type="password" name="password" id="pass" value="" />
+
+            <h3>Aficiones</h3>
+            <input type="checkbox" name="hobbies" id="hobbies_sports" value="" />
+            <label for="hobbies_sports">Deportes</label>
+
+        </form>
+
+    </body>
+
+</html>
