@@ -14,16 +14,75 @@
 
             <input type="hidden" name="id" value="12345" />
 
-            <label for="user">Usuario: </label>
-            <input type="text" name="username" id="user" value="" />
+            <fieldset>
+                <legend>Tipo de usuario</legend>
+                <input type="radio" name="user_type" id="user_type_student" value="st" checked />
+                <label for="user_type_student">Alumno</label>
+                <input type="radio" name="user_type" id="user_type_professor" value="pr" />
+                <label for="user_type_professor">Profesor</label>
+            </fieldset>
+            <br/>
+
+            <label for="id">Matrícula: </label>
+            <input type="text" name="id" id="id" value="" autofocus required pattern="(A|L)0(\d{7})" placeholder="A0 + 7 dígitos" />
+            <br><br>
+
+            <label for="user">Correo electrónico: </label>
+            <input type="email" name="username" id="user" value="" required placeholder="Ej. A00888867@itesm.mx" />
             <br><br>
 
             <label for="pass">Contraseña: </label>
-            <input type="password" name="password" id="pass" value="" />
+            <input type="password" name="password" id="pass" value="" maxlength="8" required />
+            <br/><br/>
+            <label for="country">País de origen:</label>
+            <select name="country" id="country">
+                <optgroup label="América">
+                    <option value="ag">Argentina</option>
+                    <option value="jm">Jamaica</option>
+                    <option value="mx" selected>México</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="rs">Rusia</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="fr">Francia</option>
+                </optgroup>
+            </select>
+            <br/><br/>
 
-            <h3>Aficiones</h3>
-            <input type="checkbox" name="hobbies" id="hobbies_sports" value="" />
-            <label for="hobbies_sports">Deportes</label>
+            <fieldset>
+                <legend>Aficiones</legend>
+                <input type="checkbox" name="hobbies" id="hobbies_sports" value="sp" />
+                <label for="hobbies_sports">Deportes</label>
+                <input type="checkbox" name="hobbies" id="hobbies_photograph" value="ft" />
+                <label for="hobbies_photograph">Fotografía</label>
+                <input type="checkbox" name="hobbies" id="hobbies_music" value="ms" checked />
+                <label for="hobbies_music">Música</label>
+            </fieldset>
+            <br/>
+
+            <label for="fav_color">Color Favorito: </label>
+            <input type="color" name="fav_color" id="fav_color" value="#FF0000" />
+            <br/><br/>
+            <label for="birthday">Fecha de nacimiento: </label>
+            <input type="date" name="birthday" id="birthday" value="" min="1980-01-01" max="2002-12-31" required />
+            <br/><br/>
+            <label for="website">Sitio web: </label>
+            <input type="url" name="website" id="website" value="" />
+            <br/><br/>
+            <label for="photo">Fotografía: </label>
+            <input type="file" name="photo" id="photo" value="" />
+            <br><br>
+            <label for="description">Realiza una descripción breve sobre ti: </label>
+            <br/>
+            <textarea name="description" id="description" rows="8" cols="50"></textarea>
+            <br><br>
+
+            <!-- Acciones del formulario -->
+            <!-- <input type="submit" name="submit" id="submit" value="Enviar" /> -->
+            <button type="button" name="button" onclick="alert('click');">Click me!</button>
+            <button type="submit" name="submit">Enviar</button>
+            <button type="reset" name="reset"><h4>Limpiar</h4></button>
 
         </form>
 
