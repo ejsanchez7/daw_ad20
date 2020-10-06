@@ -79,10 +79,19 @@
             <br><br>
 
             <!-- Acciones del formulario -->
-            <!-- <input type="submit" name="submit" id="submit" value="Enviar" /> -->
-            <button type="button" name="button" onclick="alert('click');">Click me!</button>
-            <button type="submit" name="submit">Enviar</button>
-            <button type="reset" name="reset"><h4>Limpiar</h4></button>
+
+            <!-- Para usar con Javascript -->
+            <button type="button" name="button_btn" onclick="alert('click');" >Click me!</button>
+            <input type="button" name="button_input" onmouseover="this.value='Mouse Over';" onmouseout="this.value='Button Input';" value="Button Input" />
+            <!-- Para enviar los datos -->
+            <button type="submit" name="submit_btn"><strong>Enviar (Button)</strong></button>
+            <input type="submit" name="submit_input" value="Enviar (Input)" />
+            <input type="image" name="submit_img" src="./img/pacman.png" />
+            <!-- Para reestablecer el formulario -->
+            <button type="reset" name="reset_btn" />
+                <h4>Limpiar (Button)</h4>
+            </button>
+            <input type="reset" name="reset_input" value="Limpiar (input)" />
 
         </form>
 

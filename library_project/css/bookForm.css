@@ -1,0 +1,38 @@
+#form-container{
+    width: 100%;
+}
+
+#form-container form{
+    width: 60%;
+    margin: 40px auto;
+}
+
+#form-container .field-row{
+    margin-top: 30px;
+}
+
+#form-container .field-row label{
+    margin-right: 15px;
+}
+
+#form-container .field-row.categories input{
+    margin: 10px;
+}
+
+#form-container .field-row label.block{
+    display: block;
+    margin-bottom: 15px;
+}
+
+#form-container .field-row.actions input,
+#form-container .field-row.actions button{
+    background-color: #041d37;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: 0;
+}
+
+#form-container .field-row.actions input:hover{
+    background-color: #4a648a;
+}
