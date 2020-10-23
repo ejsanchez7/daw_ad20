@@ -1,0 +1,32 @@
+#catalog{
+    width: 100%;
+}
+
+#catalog .bookItem{
+    background-color: #FFFFFF;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #041d37;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 15px;
+}
+
+#catalog .bookItem img{
+    width: 165px;
+    height: 200px;
+}
+
+#catalog .bookItem h3{
+    font-size: 15px;
+}
+
+#catalog .bookItem p{
+    font-size: 12px;
+}
+
+.hidden{
+    display: none !important;
+}

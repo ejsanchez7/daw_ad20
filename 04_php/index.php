@@ -79,6 +79,15 @@ function generateStudent($id){
                 "<td>" . $student["major"] . "</td>" .
             "</tr>");
 }
+echo "<br/>---------------------------------<br/>";
+echo "<pre>";
+$test = "mensaje";
+//var_dump($GLOBALS["test"]);
+var_dump($_REQUEST);
+$GLOBALS["name"] = "Erik";
+unset($GLOBALS["test"]);
+echo "</pre>";
+echo "Name: $test";
 
 ?>
 

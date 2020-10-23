@@ -14,20 +14,7 @@
 
     <body>
 
-        <header class="wrapper mainHeader">
-            <h1 class="centered">DAW Project Example</h1>
-        </header>
-
-        <nav class="wrapper">
-
-            <ul>
-                <li id="first-link"><a href="./index.html">Catálogo</a></li>
-                <li><a href="">Destacados</a></li>
-                <li><a href="">Mis Préstamos</a></li>
-                <li><a href="./newBook.html">Nuevo Libro</a></li>
-            </ul>
-
-        </nav>
+        <?php require_once("./php/partials/header.php"); ?>
 
         <main class="wrapper">
 
@@ -141,10 +128,7 @@
 
         </main>
 
-        <footer class="wrapper">
-            <p>Desarrollado para la clase DAW AD20&copy;</p>
-        </footer>
-
+        <?php require_once("./php/partials/footer.php"); ?>
 
     </body>
 
