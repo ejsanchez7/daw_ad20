@@ -13,7 +13,7 @@
             <!-- Nombre,precio,cantidad -->
             <br/><br/>
             <label for="name">Nombre: </label>
-            <input type="text" name="name" id="name" value="" />
+            <input type="text" name="name" id="name" value="" required />
             <br/><br/>
             <label for="price">Precio: </label>
             <input type="number" name="price" id="price" value="" step="0.1" />

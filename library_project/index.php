@@ -1,4 +1,15 @@
-<?php require_once "./php/books_data.php"; ?>
+<?php
+//require_once "./php/books_data.php";
+require_once "./php/json.php";
+
+define("BOOKS_DATA_FILE",dirname(__FILE__) . "/data/books.json");
+
+$books = readJSON(BOOKS_DATA_FILE);
+
+echo "<pre>";
+print_r($books);
+echo "</pre>";
+?>
 
 <!DOCTYPE html>
 
