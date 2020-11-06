@@ -1,3 +1,14 @@
+<?php
+//Incluir los paths
+require_once "./php/config.php";
+//Incluir la librería para cargar los JSON
+require_once "./php/json.php";
+
+$authors = readJSON(AUTHORS_DATA_FILE);
+$publishers = readJSON(PUBLISHERS_DATA_FILE);
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="es" dir="ltr">
@@ -52,11 +63,9 @@
                     <div class="field-row">
                         <label for="author">Autor: </label>
                         <select class="" name="author" id="author">
-                            <option value="1">Carlos Ruiz Zafón</option>
-                            <option value="2">C.S. Lewis</option>
-                            <option value="3">Isaac Asimov</option>
-                            <option value="4">J.K. Rowling</option>
-                            <option value="5">Stephen King</option>
+                            <?php foreach($authors as $id => $author){ ?>
+                                <option value="<?php echo $id; ?>"><?php echo $author["name"]; ?></option>
+                            <?php } ?>
                         </select>
                     </div>
                     <div class="field-row">
@@ -66,12 +75,14 @@
                     <div class="field-row">
                         <label for="publisher">Editorial: </label>
                         <select class="" name="publisher" id="publisher">
-                            <option value="1">Alfaguara</option>
-                            <option value="2">Destino</option>
-                            <option value="3">Porrúa</option>
-                            <option value="4">Salamanca</option>
-                            <option value="5">Santillana</option>
+                            <?php foreach($publishers as $id => $publisher){ ?>
+                                <option value="<?php echo $id; ?>"><?php echo $publisher["name"]; ?></option>
+                            <?php } ?>
                         </select>
+                    </div>
+                    <div class="field-row">
+                        <label for="edition">URL de Portada: </label>
+                        <input type="url" name="book_cover" id="book_cover" value="" required />
                     </div>
                     <div class="field-row">
                         <label for="copies">Ejemplares: </label>

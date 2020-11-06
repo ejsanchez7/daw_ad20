@@ -1,9 +1,16 @@
 <?php
 
-require_once "./php/books_data.php";
+require_once "./php/config.php";
+require_once "./php/json.php";
+
+$books = readJSON(BOOKS_DATA_FILE);
+$authors = readJSON(AUTHORS_DATA_FILE);
+$publishers = readJSON(PUBLISHERS_DATA_FILE);
 
 $isbn = isset($_GET["isbn"]) ? $_GET["isbn"] : null;
 $book = ($isbn) ? $books[$isbn] : null;
+$authorId = ($book) ? $book["author"] : null;
+$publisherId = ($book) ? $book["publisher"] : null;
 
 ?>
 
@@ -66,9 +73,9 @@ $book = ($isbn) ? $books[$isbn] : null;
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><?php echo $book["author"]; ?></td>
+                                        <td><?php echo $authors[$authorId]["name"]; ?></td>
                                         <td><?php echo $book["edition"]; ?></td>
-                                        <td><?php echo $book["publisher"]; ?></td>
+                                        <td><?php echo $publishers[$publisherId]["name"]; ?></td>
                                         <td><?php echo $book["copies"]; ?></td>
                                     </tr>
                                 </tbody>

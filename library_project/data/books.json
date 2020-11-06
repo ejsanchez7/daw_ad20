@@ -1,35 +1,70 @@
 {
     "4668665355": {
         "isbn": "4668665355",
-        "title": "Harry Potter y El Cáliz de Fuego",
-        "author": "J.K. Rowling",
+        "title": "Harry Potter y El C\u00e1liz de Fuego",
+        "author": 4,
         "edition": "2004",
-        "publisher": "Salamandra",
+        "publisher": 4,
         "copies": 100,
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus eu ipsum rhoncus cursus ac at ante. Quisque id faucibus diam, gravida fringilla erat.",
-        "categories": ["Novela","Fantasía"],
-        "image": "https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/9788498389265.jpg"
+        "categories": [
+            "Novela",
+            "Fantas\u00eda"
+        ],
+        "image": "https:\/\/www.sanborns.com.mx\/imagenes-sanborns-ii\/1200\/9788498389265.jpg"
     },
     "8976564343469": {
         "isbn": "8976564343469",
         "title": "Viaje al Centro de la Tierra",
-        "author": "Julio Verne",
+        "author": 7,
         "edition": "1994",
-        "publisher": "Porrúa",
+        "publisher": 3,
         "copies": 25,
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus eu ipsum rhoncus cursus ac at ante. Quisque id faucibus diam, gravida fringilla erat.",
-        "categories": ["Novela","Ciencia Ficción"],
-        "image": "https://i.pinimg.com/564x/b0/dc/87/b0dc870758314b34afbffab90a96b35b.jpg"
+        "categories": [
+            "Novela",
+            "Ciencia Ficci\u00f3n"
+        ],
+        "image": "https:\/\/i.pinimg.com\/564x\/b0\/dc\/87\/b0dc870758314b34afbffab90a96b35b.jpg"
     },
     "963468953": {
         "isbn": "963468953",
         "title": "El Gato Negro",
-        "author": "Edgar Allan Poe",
+        "author": 8,
         "edition": "2011",
-        "publisher": "Ediciones Leyenda",
+        "publisher": 7,
         "copies": 30,
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet purus eu ipsum rhoncus cursus ac at ante. Quisque id faucibus diam, gravida fringilla erat.",
-        "categories": ["Novela","Terror"],
-        "image": "https://m.media-amazon.com/images/I/41l7Zz4WHhL.jpg"
+        "categories": [
+            "Novela",
+            "Terror"
+        ],
+        "image": "https:\/\/m.media-amazon.com\/images\/I\/41l7Zz4WHhL.jpg"
+    },
+    "0987654321234": {
+        "isbn": "0987654321234",
+        "title": "IT",
+        "author": "5",
+        "edition": "1999",
+        "publisher": "1",
+        "copies": "34",
+        "summary": "Libro sobre un payaso malvado",
+        "categories": [
+            "novela"
+        ],
+        "image": "https://puertafalsadotcom.files.wordpress.com/2019/06/whatsapp-image-2019-06-16-at-18.05.03.jpeg"
+    },
+    "9788422642213": {
+        "isbn": "9788422642213",
+        "title": "De la Tierra a la Luna",
+        "author": "7",
+        "edition": "1990",
+        "publisher": "5",
+        "copies": "150",
+        "summary": "De la Tierra a la Luna es una novela \u00abcient\u00edfica\u00bb y \u00absat\u00edrica\u00bb del escritor Julio Verne, publicada en el \"Journal des d\u00e9bats politiques et litt\u00e9raires\" desde el 14 de septiembre hasta el 14 de octubre de 1865, y como un solo volumen el 25 de octubre de ese mismo a\u00f1o.",
+        "categories": [
+            "novela"
+        ],
+        "image": "https:\/\/i.pinimg.com\/originals\/cc\/0a\/70\/cc0a701620fba1d446bd13c6640d066b.jpg"
     }
 }

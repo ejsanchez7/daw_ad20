@@ -1,15 +1,17 @@
 <?php
 //require_once "./php/books_data.php";
 require_once "./php/json.php";
-
-define("BOOKS_DATA_FILE",dirname(__FILE__) . "/data/books.json");
+require_once "./php/config.php";
 
 $books = readJSON(BOOKS_DATA_FILE);
-
+$authors = readJSON(AUTHORS_DATA_FILE);
+/*
 echo "<pre>";
 print_r($books);
 echo "</pre>";
+*/
 ?>
+
 
 <!DOCTYPE html>
 
@@ -39,12 +41,16 @@ echo "</pre>";
 
             <section id="catalog">
 
-                <?php foreach($books as $isbn => $book){ ?>
+                <?php
+                foreach($books as $isbn => $book){
+
+                    $authorId = $book['author'];
+                ?>
 
                     <div class="bookItem">
                         <img src="<?php echo $book['image']; ?>" alt="<?php echo $book['title']; ?>" />
                         <h3><?php echo $book['title']; ?></h3>
-                        <p><?php echo $book['author']; ?></p>
+                        <p><?php echo $authors[$authorId]["name"]; ?></p>
                         <div>
                             <a href="./book.php?isbn=<?php echo $isbn; ?>" target="_blank">Ver detalle</a>
                         </div>
