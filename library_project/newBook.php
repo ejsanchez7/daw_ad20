@@ -3,6 +3,9 @@
 require_once "./php/config.php";
 //Incluir la librería para cargar los JSON
 require_once "./php/json.php";
+require_once "./php/authorize.php";
+
+checkPermission("newBook");
 
 $authors = readJSON(AUTHORS_DATA_FILE);
 $publishers = readJSON(PUBLISHERS_DATA_FILE);

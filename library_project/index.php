@@ -3,13 +3,16 @@
 require_once "./php/json.php";
 require_once "./php/config.php";
 
+session_start();
+
 $books = readJSON(BOOKS_DATA_FILE);
 $authors = readJSON(AUTHORS_DATA_FILE);
 /*
 echo "<pre>";
-print_r($books);
+print_r($_SESSION);
 echo "</pre>";
 */
+
 ?>
 
 

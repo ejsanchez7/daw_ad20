@@ -1,0 +1,23 @@
+{
+    "ejsanchez@tec.mx": {
+        "id": 1,
+        "username": "ejsanchez@tec.mx",
+        "firstName": "Erik",
+        "lastName": "Sánchez",
+        "password": "123abc"
+    },
+    "cesar@tec.mx": {
+        "id": 1,
+        "username": "cesar@tec.mx",
+        "firstName": "César",
+        "lastName": "Aranda",
+        "password": "cesar123"
+    },
+    "mariana@tec.mx": {
+        "id": 1,
+        "username": "mariana@tec.mx",
+        "firstName": "Mariana",
+        "lastName": "García",
+        "password": "mariana123"
+    }
+}
