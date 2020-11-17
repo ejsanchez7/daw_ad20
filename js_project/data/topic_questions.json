@@ -1,0 +1,35 @@
+{
+    "1": [
+        {
+            "description": "¿Cuál es el animal más grande del mundo?",
+            "correctAnswer": 2,
+            "answers": ["Jirafa","Elefante","Ballena azul"]
+        },
+        {
+            "description": "Es un animal originario de México",
+            "correctAnswer": 2,
+            "answers": ["Cisne","Ajolote","Águila calva"]
+        },
+        {
+            "description": "Pregunta 3",
+            "correctAnswer": 0,
+            "answers": ["Respuesta 1","Respuesta 2","Respuesta 3"]
+        },
+        {
+            "description": "Pregunta 4",
+            "correctAnswer": 0,
+            "answers": ["Respuesta 1","Respuesta 2","Respuesta 3"]
+        },
+        {
+            "description": "Pregunta 5",
+            "correctAnswer": 1,
+            "answers": ["Respuesta 1","Respuesta 2","Respuesta 3"]
+        },
+    ],
+    "2": [
+
+    ],
+    "3": [
+
+    ]
+}

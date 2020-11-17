@@ -1,0 +1,69 @@
+body{
+    /* Conjunto de propiedades a modificar */
+    color: #FFFFFF;
+    background-color: #041d37;
+    margin: 0;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0px auto;
+    padding: 25px 35px;
+    box-sizing: border-box;
+}
+
+.mainHeader, footer{
+    background-color: #4a648a;
+}
+
+header,footer{
+    text-align: center;
+}
+
+main{
+    background-color: #2b4c6f;
+}
+
+main section{
+    width: 74%;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+#topicsList .topic{
+    background-color: #FFFFFF;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #041d37;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 15px;
+}
+
+#topicsList .topic img{
+    width: 165px;
+    height: 200px;
+}
+
+#topicsList .topic h3{
+    font-size: 17px;
+}
+
+#topicsList .topic p{
+    font-size: 12px;
+}
+
+#topicsList .topic a{
+    display: block;
+    padding: 10px 20px;
+    background-color: #041d37;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#topicsList .topic a:hover{
+    background-color: #4a648a;
+}
