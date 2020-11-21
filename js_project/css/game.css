@@ -1,0 +1,49 @@
+body{
+    /* Conjunto de propiedades a modificar */
+    color: #FFFFFF;
+    background-color: #041d37;
+    margin: 0;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0px auto;
+    padding: 25px 35px;
+    box-sizing: border-box;
+}
+
+.mainHeader, footer{
+    background-color: #4a648a;
+}
+
+header,footer{
+    text-align: center;
+}
+
+main{
+    background-color: #2b4c6f;
+}
+
+main section{
+    width: 74%;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+#mainImage{
+    width: 350px;
+    height: 350px;
+    border: 1px solid #FFFFFF;
+    background-size: 100% 100%;
+}
+
+#mainImage,
+#imageOptions{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#imageOptions{
+    width: 500px;
+    vertical-align: top;
+}

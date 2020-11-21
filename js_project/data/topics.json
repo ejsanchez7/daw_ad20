@@ -2,16 +2,21 @@
     "1": {
         "name": "Animales",
         "description": "",
-        "image": ""
+        "image": "https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/10/02/Recortada/img_jelcacho_20191002-173510_imagenes_lv_terceros_biodiversidad-kC1F-U47777536209wJD-992x558@LaVanguardia-Web.jpg"
     },
     "2": {
         "name": "Países",
         "description": "",
-        "image": ""
+        "image": "https://www.incp.org.co/wp-content/uploads/2017/10/Paises.jpg"
     },
     "3": {
         "name": "Películas",
+        "description": "Adivina tus películas favoritas",
+        "image": "https://i.blogs.es/aa91a3/cine-/1366_2000.jpg"
+    },
+    "4": {
+        "name": "Pintores",
         "description": "",
-        "image": ""
+        "image": "https://i.blogs.es/aa91a3/cine-/1366_2000.jpg"
     }
 }

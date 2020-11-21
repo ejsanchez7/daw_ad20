@@ -5,22 +5,31 @@ No están asociadas directamente a la lógica de una página en
 particular sino que pueden emplearse en cualquiera.
 ************************************************************/
 
-//Obtiene el valor de un parámetro de la URL
-function getParameter(name){
+//Revuelve los elementos de un arreglo
+function arrayShuffle(array){
 
-    var parametersText = window.location.search.substring(1);
-    var parameters = {};
+    //Crear copia del arreglo
+    var myArray = array.slice();
+    //Nuevo arreglo de salida
+    var output = [];
 
-    if(parametersText !== ""){
-        var parametersListString = parametersText.split("&");
-
-        for(var i=0; i<parametersListString.length; i++){
-            var parameterComponents = parametersListString[i].split("=");
-            parameters[parameterComponents[0]] = parameterComponents[1];
-        }
+    //mientras haya elementos en el arreglo tomar uno aleatoriamente y pasarlo a output
+    while(myArray.length > 0){
+        var index = randomNumber(0,(myArray.length-1));
+        //Guardarlo en la salida
+        output.push(myArray[index]);
+        //Borrarlo de la copia
+        myArray.splice(index,1);
     }
 
-    return parameters[name];
+    return output;
+
+}
+
+//Obtiene el valor de un parámetro de la URL
+function getParameter(name){
+    var parameters = new URLSearchParams(document.location.search);
+    return parameters.get(name);
 }
 
 //Devuelve un número entero aleatorio entre min y max
@@ -31,15 +40,19 @@ function randomNumber(min,max){
 //Carga un archivo JSON desde una URL y devuelve su contenido como objeto de JS
 function getJsonFile(url,callback){
 
-    var xhttp = new XMLHttpRequest();
+    //Agregar el timestamp a la URL para que no la cachée
+    url = url + "?t=" + (new Date()).getTime();
 
-    xhttp.onreadystatechange = function() {
-        if( (this.readyState === 4) && ( (this.status === 200) || (this.status === 304) ) ){
-                callback(JSON.parse(this.responseText));
-        }
-    };
+    //Ejecutar el fetch y devolver la promesa con los datos JSON
+    var dataPromise = fetch(url)
+        .then(function(response){
+            //Verificar si la respuesta fue exitosa
+            if(response.ok){
+                //Devolver una promesa con los datos parseados
+                return response.json();
+            }
+            alert("error al cargar los datos");
+        });
 
-    xhttp.open("GET", url, true);
-    xhttp.send();
-
+    return dataPromise;
 }
