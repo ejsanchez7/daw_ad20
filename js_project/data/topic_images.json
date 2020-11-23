@@ -1,35 +1,35 @@
 {
     "1": [
         {
-            "nombre": "Panda",
+            "name": "Panda",
             "url": "https://c.files.bbci.co.uk/4FA0/production/_108848302_a0d15811-30d8-4a51-8dd3-ab45f3dbc387.jpg",
             "pieces": 9,
             "questions": 8,
             "timeout": 300
         },
         {
-            "nombre": "Avestruz",
+            "name": "Avestruz",
             "url": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5f560db65bafe8096474de3e/6-avestruz-de-cerca_3.jpg",
             "pieces": 16,
             "questions": 10,
             "timeout": 300
         },
         {
-            "nombre": "Gato",
+            "name": "Gato",
             "url": "https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/04/02/Recortada/img_mrius_20190402-141602_imagenes_lv_terceros_gato_nombre2-328-kLmH-U461425413181OZB-992x558@LaVanguardia-Web.jpg",
             "pieces": 16,
             "questions": 10,
             "timeout": 300
         },
         {
-            "nombre": "Tiburón",
+            "name": "Tiburón",
             "url": "https://www.nationalgeographic.com.es/medio/2018/02/27/tiburon__1280x720.jpg",
             "pieces": 16,
             "questions": 10,
             "timeout": 300
         },
         {
-            "nombre": "Chacal",
+            "name": "Chacal",
             "url": "https://www.animalesdeldesierto.com/wp-content/uploads/2019/08/chacal-1.jpeg",
             "pieces": 16,
             "questions": 10,
@@ -37,7 +37,34 @@
         }
     ],
     "2": [
-
+        {
+            "name": "China",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+            "pieces": 9,
+            "questions": 8,
+            "timeout": 300
+        },
+        {
+            "name": "Congo",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg",
+            "pieces": 9,
+            "questions": 8,
+            "timeout": 300
+        },
+        {
+            "name": "México",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+            "pieces": 9,
+            "questions": 8,
+            "timeout": 300
+        },
+        {
+            "name": "Estados Unidos",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
+            "pieces": 9,
+            "questions": 8,
+            "timeout": 300
+        }
     ],
     "3": [
 
